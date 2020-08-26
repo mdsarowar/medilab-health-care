@@ -315,25 +315,12 @@
 
         <div class="section-title">
           <h2>Make an Appointment</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>you can easily appointment a doctor. so please select your problem department and write  doctor name .</p>
         </div>
 
         <form action="{{URL('showdoctor')}}" method="post" role="form" class="php-email-form">
         @csrf
-          <div class="form-row">
-            <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-          </div>
+          
           <div class="form-row">
             <div class="col-md-4 form-group">
               <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -344,28 +331,22 @@
                 <option value="">Select Department</option>
                 <option value="cardiology">cardiology</option>
                 <option value="neurology">neurology </option>
-                <option value="orthopedich">orthopedich</option>
+                <option value="orthopedic">orthopedic</option>
                 <option value="opthalmologist">opthalmologist</option>
                 <option value="ent">ent specialist</option>
                 <option value="dermatologist">dermatologist</option>
+                <option value="medicine">medicine</option>
+                <option value="dentist">dentist</option>
               </select>
               <div class="validate"></div>
             </div>
             <div class="col-md-4 form-group">
-              <select name="doctor" id="doctor" class="form-control">
-                <option value="">Select Doctor</option>
-                <option value="Doctor 1">Doctor 1</option>
-                <option value="Doctor 2">Doctor 2</option>
-                <option value="Doctor 3">Doctor 3</option>
-              </select>
+            <input type="search" placeholder="search doctor" name ="doctor" >
               <div class="validate"></div>
             </div>
           </div>
 
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-            <div class="validate"></div>
-          </div>
+          
           <div class="mb-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
@@ -489,7 +470,7 @@
     
     <!-- End Departments Section -->
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <!-- <section id="testimonials" class="testimonials">
       <div class="container">
 
         <div class="owl-carousel testimonials-carousel">
@@ -532,63 +513,10 @@
               </p>
             </div>
           </div>
-
-          <div class="testimonial-wrap">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
-
-          <div class="testimonial-wrap">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
-
-          <div class="testimonial-wrap">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
-
-          <div class="testimonial-wrap">
-            <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>
-
         </div>
 
       </div>
-    </section>
+    </section> -->
     <!-- End Testimonials Section -->
 
     <!-- ======= Gallery Section ======= -->
@@ -684,7 +612,7 @@
       </div>
 
       <div>
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com.bd/maps/place/%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A1%E0%A6%BF+%E0%A7%A9%E0%A7%A8+%E0%A6%B8%E0%A7%9C%E0%A6%95+%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%9C,+%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A1%E0%A6%BF+%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%9C,+%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE+1209/@23.7509784,90.3713933,17z/data=!3m1!4b1!4m5!3m4!1s0x3755bf4d6018f643:0x603d2d083289b4a3!8m2!3d23.7509735!4d90.373582" frameborder="0" allowfullscreen></iframe>
+        <iframe style="border:2px; width: 100%; height: 350px;" src="https://www.google.com.bd/maps/place/%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A1%E0%A6%BF+%E0%A7%A9%E0%A7%A8+%E0%A6%B8%E0%A7%9C%E0%A6%95+%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%9C,+%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A1%E0%A6%BF+%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%9C,+%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE+1209/@23.7509784,90.3713933,17z/data=!3m1!4b1!4m5!3m4!1s0x3755bf4d6018f643:0x603d2d083289b4a3!8m2!3d23.7509735!4d90.373582" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <div class="container">

@@ -22,13 +22,13 @@ class ControllerNew extends Controller
         return view('symptoms.eye');
     }
     public function toothsympt(){
-        return view('symptoms.sympt');
+        return view('symptoms.tooth');
     }
     public function nosesympt(){
         return view('symptoms.ear_nose');
     }
     public function skinsympt(){
-        return view('symptoms.sympt');
+        return view('symptoms.skin');
     }
     public function chestsympt(){
         return view('symptoms.chest');
@@ -161,9 +161,20 @@ class ControllerNew extends Controller
         return redirect()->back();
 
     }
-    public function showdoctor(){
-        $res=DB::table('doctors')->get();
+    public function showdoctor(Request $re){
+        $depa=$re->department;
+        $name=$re->doctor;
+        $res=DB::table('doctors')->where('department',$depa)->where('name',$name)->get();
         return view('doctors.showdoctor',compact('res'));
+        
+    }
+    public function showdoctorli( $d){
+        // $depa=$re->department;
+        // $name=$re->doctor;
+        $res=DB::table('doctors')->where('department',$d)->get();
+        return view('doctors.showdoctor',compact('res'));
+        
+        
     }
  //========== doctor=========================
    

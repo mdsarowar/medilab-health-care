@@ -43,6 +43,7 @@ Route::get('/sampledata','ControllerNew@sampledata');
 // =======================================Doctor=======================
 Route::get('doctors','ControllerNew@doctorpage');
 Route::post('submit/doctor','ControllerNew@doctorlist');
-Route::post('showdoctor','ControllerNew@showdoctor');
+Route::post('showdoctor ','ControllerNew@showdoctor');
+Route::get('showdoctorlist{d} ','ControllerNew@showdoctorli');
 
 // =======================================Doctor=======================

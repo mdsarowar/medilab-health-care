@@ -1,17 +1,21 @@
 @extends('index')
 @section('conte')
-<br>
-<br>
-<br>
+
 <div class="row justify-content-center">
     <div class="appoinment_form_section lite_bg">
         <table class="table table-responsive">
+        <br>
+<br>
+<br>
         <tr>
-            <th>name</th>
-            <th>email</th>
-            <th>phone</th>
-            <th>details</th>
-            <th>department</th>
+        <br>
+<br>
+<br>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Details</th>
+            <th>Department</th>
             
         </tr>
         <tr>
@@ -22,9 +26,9 @@
             <td>{{$row->details}}</td>
             <td>{{$row->department}}</td>
             <td>
-            <a href="" class="btn btn-sm btn-info">edit</a>
-            <a href="" class="btn btn-sm btn-denger">delet</a>
-            <a href="" class="btn btn-sm btn-success">view</a>
+            <!-- <a href="" class="btn btn-sm btn-info">edit</a>
+            <a href="" class="btn btn-sm btn-denger">delet</a> -->
+            <!-- <a href="" class="btn btn-sm btn-success">view</a> -->
           
             </td>
         </tr>

@@ -93,9 +93,30 @@ form button{
     border-radius: 47px;
     color: #d8ded8;
     font-weight: bold;
-    background-color: #498421;
+    background-color: #1977cc;
     font-size: 20px;
-    border: solid #60c515;
+     border: solid #1977cc;
+}
+#bmi{
+  overflow:scroll;
+}
+h5{
+  color:red;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
 </style>
@@ -137,7 +158,7 @@ form button{
 
                 <div>
                 <br><br>
-                <h1>your Ideal body weight is : {{$sar ?? 'sarowar'}} KG</h1>
+                <h1>your Ideal body weight is : {{$sar ?? '00'}} kg</h1>
                 
                 </div>
             </form>   
@@ -181,8 +202,38 @@ form button{
               <button type="submit">Calculate</button>
           </form>
           <div class="result">
-              <h3>Ideal Body Weight (IBW): {{$sarr ?? ''}} KG</h3>
+              <h3>Ideal Body Weight (IBW): {{$sarr ?? '00'}} kg/m<sup>2</sup> </h3>
           </div>
+        </div>
+        <div class="table">
+        <h5>The standard weight status categories associated with BMI ranges for adults are shown in the following table . </h5>
+        <table>
+          <tr>
+            <th><b>BMI</b></th>
+            <th><b>Weight Status</b></th>
+          </tr>
+          <tr>
+            <td>Below 18.5</td>
+            <td>Underweight</td>
+            
+          </tr>
+          <tr>
+            <td>18.5 - 24.9 </td>
+            <td>Normal or Healthy Weight</td>
+            
+          </tr>
+          <tr>
+            <td>25.0 - 29.9</td>
+            <td>Overweight</td>
+          </tr>
+          <tr>
+            <td>30.0 and Above</td>
+            <td>Obese</td>
+            
+          </tr>
+          
+        </table>
+        
         </div>
         
     </div>

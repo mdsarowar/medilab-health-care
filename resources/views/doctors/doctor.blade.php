@@ -33,10 +33,12 @@
                 <option value="">Select Department</option>
                 <option value="cardiology">cardiology</option>
                 <option value="neurology">neurology </option>
-                <option value="orthopedich">orthopedich</option>
+                <option value="orthopedic">orthopedic</option>
                 <option value="opthalmologist">opthalmologist</option>
                 <option value="ent">ent specialist</option>
                 <option value="dermatologist">dermatologist</option>
+                <option value="medicine">medicine</option>
+                <option value="dentist">dentist</option>
               </select>
             </div>
             <div class="form-group">

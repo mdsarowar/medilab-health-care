@@ -86,7 +86,7 @@ a{
           <div class="box"><a href="{{URL('/children')}}">Children Symptoms</a></div>
           <div class="box"><a href="{{URL('/head')}}">Head</a></div>
           <div class="box"><a href="{{URL('/eye')}}">Eye</a></div>
-          <!-- <div class="box"><a href="{{URL('/tooth')}}">Tooth</a></div> -->
+          <div class="box"><a href="{{URL('/tooth')}}">Tooth</a></div>
           <div class="box"><a href="{{URL('ear')}}">Ear/Nose/Throat</a></div>
           <div class="box"><a href="{{URL('/skin')}}">Skin</a></div>
           <div class="box"><a href="{{URL('/chest')}}">Chest</a></div>
