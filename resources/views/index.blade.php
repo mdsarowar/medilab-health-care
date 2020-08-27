@@ -112,6 +112,7 @@
               <li><a href="{{URL('/')}}#onlineform">Online doctor</a></li>
               <li><a href="{{URL('/')}}#appointment">appointment</a></li>
               <li><a href="{{URL('doctors')}}">add doctor</a></li>
+              <li><a href="{{URL('doctors')}}">add do</a></li>
             </ul>
           
           </li>

@@ -610,10 +610,13 @@
           <p>.</p>
         </div>
       </div>
+          <div class="container-fluid">
+        <div class="map-responsive">
+      <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    </div>
 
-      <div>
-        <iframe style="border:2px; width: 100%; height: 350px;" src="https://www.google.com.bd/maps/place/%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A1%E0%A6%BF+%E0%A7%A9%E0%A7%A8+%E0%A6%B8%E0%A7%9C%E0%A6%95+%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%9C,+%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A1%E0%A6%BF+%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%9C,+%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE+1209/@23.7509784,90.3713933,17z/data=!3m1!4b1!4m5!3m4!1s0x3755bf4d6018f643:0x603d2d083289b4a3!8m2!3d23.7509735!4d90.373582" frameborder="0" allowfullscreen></iframe>
-      </div>
+    
 
       <div class="container">
         <div class="row mt-5">
